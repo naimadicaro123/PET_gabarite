@@ -5,7 +5,7 @@ class Participante(models.Model):
     nome = models.CharField(max_length=100)
     escola = models.CharField(max_length=100)
     cpf = models.CharField(max_length=14, unique=True)
-    data = models.DateField()  # *** caso necessario alterar para CharField ***
+    data = models.CharField(max_length=20)  
 
     def __str__(self):
         return f'{self.nome} ({self.id_aluno})'
