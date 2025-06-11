@@ -83,3 +83,41 @@ footer .nomes {
     color: #003333;
     margin-top: 5px;
 }
+.itens{
+    align-items: center;
+    text-align: center;
+}
+select{
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 6px;
+}
+option:hover{
+  color: white;
+  background-color: black;
+  transition: ease-in-out 3s;
+}
+.the_buttons{
+    align-items: center;
+    text-align: center;
+    
+}
+.link-btn button {
+    margin-top: 20px;
+  padding: 6px 12px;
+  background-color: aqua;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-left: 5px;
+margin-right: 5px;
+}
+
+.link-btn button:hover {
+  background-color: black;
+  color: white;
+}
