@@ -1,0 +1,20 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: rgb(106, 202, 202); */
+  background-color:  #a22727;
+  padding: 1rem 2rem;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+
+.links a{
+  position: relative;
+  font-size: 18px;
+  /* color: #a22727; */
+  color: white;
+  font-weight: 500;
+  margin-left: 40px;
+  text-decoration: none;
+}
