@@ -5,6 +5,7 @@
 body {
     display: flex;
     flex-direction: column;
+    font-family: "Kanit", sans-serif;
 }
 main {
     flex: 1;
@@ -18,17 +19,100 @@ header{
     background-color: rgb(106, 202, 202);
     margin-bottom: 20px;
 }
+.text-openig{
+    display: flex;
+
+}
 h1{
     text-align: center;
+    font-size: 3rem;
 }
 h2{
     text-align: center;
     font-size: 30px;
     margin-bottom: 20px;
 }
-.dates{
-    display: inline-block;
-    margin: 0 auto;
+.first_text{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10rem;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.index-btn {
+  margin-top: -8rem; /* ou ajuste conforme o necessário */
+}
+
+.text_openig{
+  padding-bottom: 30px;
+}
+@media (max-width: 480px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-opening {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .first_text {
+    font-size: 16px;
+    margin-bottom: 2rem;
+    padding: 0 10px;
+  }
+
+  .the_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; /* empurra o botão para baixo do texto */
+  }
+
+  .link-btn button {
+    font-size: 13px;
+    padding: 8px 12px;
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .cadastre_div {
+    width: 90%;
+    height: auto; /* Altura automática para evitar muita altura */
+    padding: 6px 10px; /* Padding menor */
+    border-width: 4px;
+  }
+
+  .the_buttons {
+    margin-top: 4px; /* Margem superior menor */
+  }
+
+  .cadastre_div .link-btn button {
+    font-size: 14px;
+    padding: 6px 12px;
+    margin: 0 4px 6px; /* Margem inferior menor */
+  }
+
+  .dates input {
+    margin-bottom: 12px; /* Mantém espaçamento razoável entre inputs */
+  }
+
+  /* Para o terceiro input sem margin bottom */
+  .dates input:nth-of-type(3) {
+    margin-bottom: 0;
+  }
+}
+
+.dates {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 label{
     align-items: end;
@@ -43,18 +127,26 @@ input{
    padding: 5px;
    border: 0px;
 }
-
-.cadastre_div{
-    margin: 0 auto;
-    text-align: center;
-    align-items: center;
-    background-color: rgb(240, 182, 75);
-    padding: 10px;
-    height: 22rem;
-    width: 15rem;
-    border-radius: 10px;
-    border: 5px solid black;
+.dates input:nth-of-type(3) {
+  margin-bottom: 0;
 }
+
+.cadastre_div {
+  margin: 0 auto;
+  background-color: rgb(240, 182, 75);
+  padding: 10px;
+  height: 22rem;
+  width: 15rem;
+  border-radius: 10px;
+  border: 5px solid black;
+  color: #222222;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* espaçamento proporcional */
+  align-items: center;
+}
+
 button{
     padding: 6px;
     background-color: aqua;
@@ -103,13 +195,17 @@ option:hover{
   transition: ease-in-out 3s;
 }
 .the_buttons{
-    align-items: center;
-    text-align: center;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;   /* Centraliza na horizontal */
+  align-items: center;       /* Centraliza na vertical */
+  height: 100%;              /* Ocupa toda a altura do container pai */
 }
+
+    
+
 .link-btn button {
     margin-top: 20px;
-  padding: 6px 12px;
+  padding: 10px 16px;
   background-color: aqua;
   border: none;
   border-radius: 5px;
@@ -120,6 +216,7 @@ option:hover{
   margin-left: 5px;
 margin-right: 5px;
 margin-bottom: 20px;
+font-size: 15px;
 }
 
 .link-btn button:hover {
