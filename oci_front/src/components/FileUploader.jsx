@@ -16,16 +16,9 @@ export default function FileUploader() {
     const formData = new FormData();
     formData.append("image", image);
 
-    // envio dos dados em formato json
-    const headers = {
-      headers: {
-        "Content-Type": "application/json",
-      },
-    };
-
     //Tratamento de erros
     await api
-      .post("/Upload-image", formData, headers)
+      .post("/ler-imagem/upload/", formData)
       .then((response) => {
         // status 200, caso seja feito o upload com sucesso
         console.log(response);
