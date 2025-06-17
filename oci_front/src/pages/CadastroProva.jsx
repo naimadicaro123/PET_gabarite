@@ -2,18 +2,17 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../the_css/style.css';
-import logo from '../img/oci-logo-horizontal-color.svg'; // ajuste o caminho conforme seu projeto
+import "../styles/style.css"; // Importa o CSS corretamente
 
 function CadastroProva() {
   return (
     <>
       <header>
         <div className="image_container">
-          <img src={logo} alt="Logo OCI" />
+          {/* Usa o caminho direto da imagem na pasta public */}
+          <img src="/oci-logo-horizontal-color.svg" alt="Logo OCI" />
         </div>
       </header>
-
       <main>
         <form>
           <div className="itens">

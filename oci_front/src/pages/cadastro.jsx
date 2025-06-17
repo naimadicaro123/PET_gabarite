@@ -2,8 +2,10 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../the_css/style.css'; // ajuste o caminho se necessário
-import logo from '../img/oci-logo-horizontal-color.svg'; // mova a imagem para src/img
+import "../styles/style.css"; // ✅ CERTO
+
+<img src="/oci-logo-horizontal-color.svg" alt="Logo OCI" />
+
 
 function Cadastro() {
   return (

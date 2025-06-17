@@ -1,35 +1,37 @@
 import './App.css';
+import CadastroAluno from './pages/cadastro.jsx';       // sua página cadastro
+import CadastroProva from './pages/CadastroProva.jsx';  // página cadastro de provas
+
 import Home from './pages/Home';
 import Gabaritos from "./pages/Gabaritos/Gabaritos.jsx";
 import Participantes from "./pages/Participantes/Participantes.jsx";
 import List from "./pages/List_gabaritos/List_gabaritos.jsx";
 import Navbar from './components/Navbar.jsx';
 
-// Importando os HTMLs convertidos para React:
-import CadastroAluno from './pages/CadastroAluno.jsx';      // index.html
-import CadastroProva from './pages/CadastroProva.jsx';      // page2.html
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <Router>
-      <Navbar /> {/* A navbar aparece em todas as páginas */}
+      <Navbar /> 
       <Routes>
-        {/* Rotas já existentes */}
-        <Route path="/" element={<Home />} />
+        {/* Rota raiz abre cadastro.jsx */}
+        <Route path="/" element={<CadastroAluno />} />
+
+        {/* Segunda rota importante */}
+        <Route path="/cadastro-prova" element={<CadastroProva />} />
+
+        {/* Rotas restantes */}
+        <Route path="/home" element={<Home />} />
         <Route path="/participantes" element={<Participantes />} />
         <Route path="/gabaritos" element={<Gabaritos />} />
         <Route path="/resultados" element={<List />} />
 
-        {/* Rotas para as páginas HTML convertidas */}
+        {/* Você pode adicionar rota para cadastro se quiser */}
         <Route path="/cadastro" element={<CadastroAluno />} />
-        <Route path="/cadastro-prova" element={<CadastroProva />} />
       </Routes>
     </Router>
   );
 }
 
 export default App;
-
-
