@@ -1,0 +1,14 @@
+.Filebox {
+    background-color: 	#e07b39;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 2rem auto;   
+    padding: 2rem;
+}
+
+.button {
+    width: 50px;
+    height: 40px;
+}
